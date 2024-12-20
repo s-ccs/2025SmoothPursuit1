@@ -1,0 +1,5 @@
+follow,left,filename,triggernum,triggername
+True,True,smiley.png,11,practice_follow_left_smiley
+True,False,smiley.png,12,practice_follow_right_smiley
+False,True,smiley.png,13,practice_fix_left_smiley
+False,False,smiley.png,14,practice_fix_right_smiley
