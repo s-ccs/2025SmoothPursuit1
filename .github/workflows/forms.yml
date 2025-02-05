@@ -6,7 +6,7 @@ on:
        - .github/workflows/forms.yml
 jobs:
     build-deploy:
-        runs-on: ubuntu 24
+        runs-on: ubuntu-24.04
         strategy:
             matrix:
                 language: 
