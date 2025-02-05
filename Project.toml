@@ -1,4 +1,4 @@
-name = "template_project"
+name = "2025SmoothPursuit1"
 [compat]
 julia = "1.11.1"
 DrWatson = "2.18.0"
