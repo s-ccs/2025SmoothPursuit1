@@ -1,11 +1,12 @@
 on:
+    workflow_dispatch:
     push:
      paths:
        - project*.toml
        - .github/workflows/forms.yml
 jobs:
     build-deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         strategy:
             matrix:
                 language: 

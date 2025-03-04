@@ -1,8 +1,8 @@
 [Authors]
-  authors = "John Doe, Lina Doe"
+  authors = "Jevri Hanna"
   affiliation = "University of Stuttgart, Germany"
 [AuthorsContact]
-  email = "john@gmail.com"
+  email = "jevri.hanna@vis.uni-stuttgart.de"
 [Dataset]
   title = "Convert XDF to BIDS"
   dataset_description = "This is a test project to set up the pipeline to convert XDF to BIDS."
