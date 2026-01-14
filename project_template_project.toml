@@ -35,7 +35,7 @@
 	study_purpose_de = """In dieser Studie untersuchen wir, wie Menschen Bilder wahrnehmen, indem wir die Gehirnaktivität mit EEG und die Augenbewegungen mit einem Eye-Tracker aufzeichnen."""
 	study_purpose_en = "In this study, we will investigate how humans perceive images by recording brain activity with EEG and eye movements using an eye-tracker."
     
-	study_task_de =  "Es werden Ihnen verschiedene Bilder bewegend auf dem Monitor präsentiert. Ihre Aufgabe ist es, je nach Instruktion, den Bildern mit den Augen zu folgen oder nicht."
+	study_task_de =  "Es werden Ihnen verschiedene Bilder präsentiert, die sich über den Monitor bewegen, Ihre Aufgabe ist es, je nach Instruktion, den Bildern mit den Augen zu folgen oder nicht."
 	study_task_en = "You will see pictures moving on the screen. You should either follow or not follow them, according to instructions."
 	
 	researcher_details_de = """Verantwortliche Person: Benedikt Ehinger  
