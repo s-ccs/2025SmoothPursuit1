@@ -13,9 +13,17 @@ jobs:
                     - de
                     - en
         steps:
-            - name: Generate Forms
-              uses: s-ccs/consentform_gh_action@main
-              with:
-                language: ${{ matrix.language }}
-   
+              - name: checkout repo
+                uses: actions/checkout@v4
+              - name: Read project TOML file
+                shell: bash
+                id: read_toml
+                run: |
+                  toml_content=$(cat project_*.toml  | base64 -w0)
+                  echo "toml_content=$toml_content" >> $GITHUB_OUTPUT
+              - name: Generate Forms
+                uses: s-ccs/consentform_gh_action@main
+                with:
+                 language: ${{ matrix.language }}
+                 project_toml: ${{ steps.read_toml.outputs.toml_content }}
    
