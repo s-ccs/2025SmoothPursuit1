@@ -1,11 +1,11 @@
 import mne
 
-bids_root = "/scratch/users/hanna/2025SmoothPursuit1_data"
-deriv_root = "/scratch/users/hanna/2025SmoothPursuit1_data/derivs"
-subjects = ["998"]
+bids_root = "/scratch/data/2025SmoothPursuit1"
+deriv_root = "/scratch/data/2025SmoothPursuit1/derivs"
+subjects = ["004"]
 ch_types = ["eeg"]
 interactive = False
-task = "2025SmoothPursuit1"
+task = "sp1"
 
 task_is_rest = True
 epochs_tmin = 0
@@ -25,9 +25,10 @@ ica_algorithm = "picard-extended_infomax"
 ica_use_icalabel = True
 
 sync_eyelink = True
-sync_eventtype_regex = "3-trigger=10 Image moves"
+sync_eventtype_regex = "\\d-trigger=10 Image moves"
 sync_eventtype_regex_et = "trigger=10 Image moves"
-eeg_bipolar_channels = {"HEOG": ("LE1", "RE1"), "VEOG": ("Z1", "Z13")}
+eog_channels = ["HEOGL", "HEOGR", "VEOGL", "VEOGU"]
+eeg_bipolar_channels = {"HEOG": ("HEOGL", "HEOGR"), "VEOG": ("VEOGL", "VEOGU")}
 eog_channels = ["HEOG", "VEOG"]
 sync_heog_ch = ("HEOG")
 #sync_et_ch = "xpos_right"
@@ -35,5 +36,6 @@ sync_plot_samps = 3000
 
 run_source_estimation = False
 
-montage = mne.channels.read_dig_fif("~/NA-271_ASA.fif")
+
+montage = mne.channels.make_standard_montage("standard_1005")
 eeg_template_montage = montage
